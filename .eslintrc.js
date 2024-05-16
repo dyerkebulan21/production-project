@@ -16,12 +16,7 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: ['react'],
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:prettier/recommended',
-        'airbnb',
-    ],
+    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'airbnb', 'plugin:storybook/recommended'],
     rules: {
         'prettier/prettier': ['warn', { endOfLine: 'auto' }],
     },
