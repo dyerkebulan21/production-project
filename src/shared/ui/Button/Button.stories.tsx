@@ -3,7 +3,7 @@ import { fn } from '@storybook/test';
 import { Button } from './Button';
 
 const meta = {
-    title: 'Example/Button',
+    title: 'shared/Button',
     component: Button,
     parameters: {
         layout: 'centered',
@@ -11,27 +11,14 @@ const meta = {
 
     tags: ['autodocs'],
 
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-
     args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
-
-export const Warning: Story = {
-    args: {
-        primary: true,
-        label: 'Delete now',
-        backgroundColor: 'red',
-    },
-};
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
     args: {
-        primary: true,
         label: 'Button',
     },
 };
