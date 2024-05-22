@@ -29,3 +29,10 @@ export const Clear: Story = {
         theme: ThemeButton.CLEAR,
     },
 };
+
+export const Outline: Story = {
+    args: {
+        children: 'Text',
+        theme: ThemeButton.CLEAR,
+    },
+};
