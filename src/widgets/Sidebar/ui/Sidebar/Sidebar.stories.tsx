@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Sidebar } from './Sidebar';
+import React from 'react';
 
 const meta = {
-    title: 'shared/Sidebar',
+    title: 'widget/Sidebar',
     component: Sidebar,
     parameters: {
         layout: 'centered',
